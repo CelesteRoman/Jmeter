@@ -1,5 +1,5 @@
 <?php
-$host = "sql105.infinityfree.com";
+$host = "https://jmetersgut.onrender.com";
 $usuario = "if0_40451170";
 $contrasena = "Q4pRrb66caRH";
 $bd = "if0_40451170_sgut";

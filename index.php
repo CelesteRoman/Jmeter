@@ -7,7 +7,6 @@ include __DIR__ . "/conecta.php";
 <head>
     <meta charset="UTF-8">
     <title>Usuarios</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -152,8 +151,8 @@ include __DIR__ . "/conecta.php";
                             <label class="form-label">Unidad Administrativa</label>
                             <select name="id_unidad_administrativa" class="form-select" required>
                                 <option selected disabled>Selecciona una unidad administrativa</option>
-                                <?php foreach ($unidades as $u): ?>
-                                    <option value="<?= $u['id'] ?>"><?= $u['nombre'] ?></option>
+                                <?php foreach ($unidades as $ua): ?>
+                                    <option value="<?= $ua['id'] ?>"><?= $ua['nombre'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
