@@ -1,17 +1,22 @@
 <?php
-$host = "https://jmetersgut.onrender.com";
-$usuario = "if0_40451170";
-$contrasena = "Q4pRrb66caRH";
-$bd = "if0_40451170_sgut";
+// =======================================
+// CONEXIÓN A POSTGRESQL EN RENDER
+// =======================================
+
+$host = "dpg-d4joeggdl3ps739b57eg-a";  
+$port = "5432";
+$dbname = "jmetersgut_db";
+$usuario = "jmetersgut_db_user";
+$contrasena = "pE64cwkttLmFKvapeLFAvRdU5p8fIxDW";
 
 try {
     $conexion = new PDO(
-        "mysql:host=$host;dbname=$bd;charset=utf8",
+        "pgsql:host=$host;port=$port;dbname=$dbname",
         $usuario,
         $contrasena
     );
-
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 } catch (PDOException $e) {
     die("Error de conexión: " . $e->getMessage());
 }
