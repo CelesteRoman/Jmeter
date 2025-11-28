@@ -23,10 +23,10 @@ include __DIR__ . "/conecta.php";
         </a>
     </div>
 
-    <!-- BUSCADOR -->
+    <!-- BUSCADOR
     <div class="search-bar mb-3">
         <input type="search" id="search" class="form-control" placeholder="Buscar usuario...">
-    </div>
+    </div>  -->
 
     <!-- TABLA -->
     <div class="card">
